@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.landing {
+background-image: url("https://pink.gg/img/section-welcome-bg.jpg");
+height:100vh;
+}

@@ -315,8 +315,10 @@ nav ul li a:hover {
     .overlay .menu ul li {
         float: none;
         justify-content: center;
-        /* margin-bottom: 50px; */
+        height: 100%;
+        margin-bottom: 0px;
         width: 100%;
+        overflow-y: none;
         /* border-bottom: 1px solid #575757; */
     }
     .overlay .menu ul li:last-child {
@@ -330,6 +332,11 @@ nav ul li a:hover {
     }
     .btn-close {
       background-color: transparent;
+    }
+    .overlay .btn {
+      padding: 10px 73px;
+      background-color: #484848;
+      font-size: 26px;
     }
 }
 

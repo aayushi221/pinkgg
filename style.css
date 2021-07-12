@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
-
 body,
 html {
     margin: 0;
@@ -20,6 +16,13 @@ html {
     height:100vh;
     }
 
+.logo {
+    position: absolute;
+    top: 2.5em;
+    left: 10em;
+    justify-content: flex-start;
+    color:#fff;
+    }
 h3 {
     color: #e9e9e9;
     text-align: center;
@@ -45,28 +48,32 @@ a {
 /* OUTER NAV */
 nav {
     position: relative;
-   
     overflow: hidden;
     width: 100%;
     height: auto;
     background: none;
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: -3%;
+
 }
 nav ul {
     display: flex;
     float:right;
+    margin-right: 5%;
+
 }
 nav ul li {
     display: inline-block;
+
 }
 nav ul li a {
     display: inline-block;
     padding: 1em 3em;
-    /* border-bottom: 2px solid #fff; */
-    color: #333;
+    color:#fff;
     text-decoration: none;
-    font-size: 16px;
-    -webkit-transition: all .2s linear 0s;
+    font-size: 20px;
+     -webkit-transition: all .2s linear 0s;
     -moz-transition: all .2s linear 0s;
     -o-transition: all .2s linear 0s;
     transition-property: all .2s linear 0s;
@@ -74,6 +81,118 @@ nav ul li a {
 nav ul li a:hover {
     color: #34B484;
 }
+
+  /*Style for the first level menu bar*/
+  ul#menu{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:3em;
+    margin:0;
+    padding:0 10px;
+    color:#eee;
+    box-shadow:0 -1px rgba(0,0,0,.5) inset;
+  }
+  
+  ul#menu > li{
+    float:left;
+    list-style-type:none;
+    position:relative;
+  }
+  
+  label{
+    position:relative;
+    display:block;
+    padding:0 18px 0 12px;
+    line-height:3.2em;
+    transition:background 0.3s;
+    cursor:pointer;
+    color:white;
+    font-size: 20px;
+  }
+  
+  label:after{
+    content:"";
+    position:absolute;
+    display:block;
+    top:50%;
+    right:5px;
+    width:0;
+    height:0;
+    border-top:4px solid rgba(255,255,255);
+    border-bottom:0 solid rgba(255,255,255,.5);
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    transition:border-bottom .1s, border-top .1s .1s;
+    }
+  
+  label:hover,
+  input:checked ~ label{background:rgba(0,0,0,.3);}
+  
+  input:checked ~ label:after{
+    border-top:0 solid rgba(255,255,255,.5);
+    border-bottom:4px solid rgba(255,255,255,.5);
+    transition:border-top .1s, border-bottom .1s .1s;
+  }
+  
+  /*hide the inputs*/
+  input{display:none}
+  
+  /*show the second levele menu of the selected voice*/
+  input:checked ~ ul.submenu{
+    max-height:300px;
+    transition:max-height 0.5s ease-in;
+  }
+  
+  /*style for the second level menu*/
+  ul.submenu{
+    max-height:0;
+    padding:0;
+    overflow:hidden;
+    list-style-type:none;
+    background:#444;
+    box-shadow:0 0 1px rgba(0,0,0,.3);
+    transition:max-height 0.5s ease-out;
+    position:absolute;
+    min-width:100%;
+  }
+  
+  ul.submenu li a{
+    display:block;
+    padding:12px;
+    color:#ddd;
+    text-decoration:none;
+    box-shadow:0 -1px rgba(0,0,0,.5) inset;
+    transition:background .3s;
+    white-space:nowrap;
+  }
+  
+  ul.submenu li a:hover{
+    background:rgba(0,0,0,.3);
+  }
+  
+.btn {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(to bottom, #000000, #000000);
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 14px 40px 14px 40px;
+    text-decoration: none;
+    margin-left:20px ;
+  }
+  
+  .btn:hover {
+    background: #353738;
+    text-decoration: none;
+  }
 /* OPEN / CLOSE BTNS */
 .menu-btn {
     position: absolute;
@@ -90,12 +209,24 @@ nav ul li a:hover {
 }
 .btn-open:after {
     color: #333;
+    display:none;
     content: "\f394";
     font-family: "Ionicons";
     -webkit-transition: all .2s linear 0s;
     -moz-transition: all .2s linear 0s;
     -o-transition: all .2s linear 0s;
     transition-property: all .2s linear 0s;
+}
+@media screen and (max-width:415px){
+    .btn-open:after {
+        color: #333;
+        content: "\f394";
+        font-family: "Ionicons";
+        -webkit-transition: all .2s linear 0s;
+        -moz-transition: all .2s linear 0s;
+        -o-transition: all .2s linear 0s;
+        transition-property: all .2s linear 0s;
+    } 
 }
 .btn-open:hover:after {
     color: #34B484;
@@ -208,9 +339,8 @@ nav ul li a:hover {
     }
 
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 section {
-  align-items: center;
+  /* align-items: center; */
   /* background: #212121; */
   box-sizing: border-box;
   display: flex;
@@ -248,10 +378,10 @@ section {
 }
 .tagline {
     margin-top: 10%;
-    /* margin-bottom:1%; */
+    justify-content: center;
     backface-visibility: hidden;
   color: #d8d8d8;
-  /* display: inline-block; */
+  display: flex;
   font-size: 50px;
   font-weight: bold;
 }

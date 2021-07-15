@@ -530,3 +530,60 @@ label {
   font-weight: bold;
 }
 }
+.sec2 {
+  display: flex;
+  
+  max-width: 80%;
+}
+.black-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222;
+  padding: 10%;
+  border-radius: 30px;
+  
+}
+
+.black-box h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+form {
+  display:flex;
+}
+
+
+form input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+  .work-with-us {
+    -webkit-border-radius: 21;
+    -moz-border-radius: 21;
+    border-radius: 21px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 22px;
+    background: #eb3878;
+    padding: 14px 40px 14px 40px;
+    border: solid  #eb3878 4px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 20%;
+  }
+  
+  .work-with-us:hover {
+    background: #e02d71;
+    text-decoration: none;
+  }

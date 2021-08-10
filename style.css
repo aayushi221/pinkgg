@@ -9,7 +9,7 @@ html {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Raleway', sans-serif;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 .landing {
     background-image: url("https://pink.gg/img/section-welcome-bg.jpg");
@@ -635,7 +635,7 @@ form input[type=text], select {
   }
   .text > h1 {
     font-size: 30px;
-    color: 	grey;
+    color: 	#5a5a5a;
   }
 
   .textbody > p {
@@ -661,29 +661,45 @@ form input[type=text], select {
 
     /* ===================== */
     .container .box { 
-      width:540px; 
+      width: 90%; 
+      height: auto;
       margin:50px; 
       display:table; 
-      margin-top: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   } 
   .container .box .box-row { 
       display:table-row; 
   } 
   .container .box .box-cell { 
       display:table-cell; 
-      width:33%; 
-      padding:10px; 
-  } 
+      width:30%; 
+      padding:30px; 
+    } 
+    .box-cell.box1{
+    margin-right: 20%;
+
+  }
   .container .box .box-cell.box1 { 
-      background:green; 
-      color:white; 
       text-align:justify; 
   } 
   .container .box .box-cell.box2 { 
-      background:lightgreen; 
       text-align:justify 
   } 
   .container .box .box-cell.box3 { 
-      background:lime; 
       text-align:justify; 
+  }
+
+  .box-cell > h1 {
+    font-size: 30px;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    color:#5a5a5a;
+  }
+
+  .box-cell {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #696969;
+    font-weight: bold;
   }

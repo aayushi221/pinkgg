@@ -662,7 +662,7 @@ form input[type=text], select {
     /* ===================== */
     .container .box { 
       width: 90%; 
-      height: auto;
+      height: 100%;
       margin:50px; 
       display:table; 
       display: flex;
@@ -682,13 +682,13 @@ form input[type=text], select {
 
   }
   .container .box .box-cell.box1 { 
-      text-align:justify; 
+      text-align:left; 
   } 
   .container .box .box-cell.box2 { 
-      text-align:justify 
+      text-align:left; 
   } 
   .container .box .box-cell.box3 { 
-      text-align:justify; 
+      text-align:left; 
   }
 
   .box-cell > h1 {
@@ -702,4 +702,15 @@ form input[type=text], select {
     line-height: 1.8;
     color: #696969;
     font-weight: bold;
+  }
+
+  .three {
+    margin-top: -10%;
+    background-color: greenyellow;
+  }
+
+  .box-cell > span {
+    position:absolute;                 
+    bottom:8;                         
+    right:10;    
   }

@@ -533,7 +533,7 @@ label {
 .sec2 {
   display: flex;
   justify-content: center;
-  margin-top: -10%;
+  margin-top: -5%;
   max-width: 100%;
 }
 .black-box {
@@ -548,24 +548,29 @@ label {
   
 }
 .inner-black-box {
-  margin: 3% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0%;
+  max-width: 100%;
+  width: 100%;
 }
 .black-box h1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
   font-size: 50px ;
 }
 
 form {
   display:flex;
+  max-width: 90%;
 }
 
 
 form input[type=text], select {
-  width: 50%;
+  width: 10%;
   /* padding: 12px 20px; */
   /* margin: 8px 0; */
   display: inline-block;
@@ -587,10 +592,17 @@ form input[type=text], select {
     border: solid  #eb3878 4px;
     text-decoration: none;
     cursor: pointer;
-    margin-left: 20%;
+    margin-left: 15px;
   }
   
   .work-with-us:hover {
     background: #e02d71;
     text-decoration: none;
+  }
+
+  ::placeholder {
+    color: grey;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 5%;
   }

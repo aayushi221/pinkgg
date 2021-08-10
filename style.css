@@ -608,7 +608,7 @@ form input[type=text], select {
     padding-left: 5%;
   }
  .two {
-   margin: 5%;
+   margin-top: 20%;
  }
   
   .page2 >span {
@@ -629,16 +629,26 @@ form input[type=text], select {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: center;
-    width: 33.33%;
+    align-items: left;
+    max-width: 30%;
     margin-right: 5%;
-
+  }
+  .text > h1 {
+    font-size: 30px;
+    color: 	grey;
   }
 
+  .textbody > p {
+    font-size: 20px;
+    color:#696969;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 2;
+  }
   .image-atomichub{
       max-width: 66.69%;
       height:50px;
-      margin-top: -25%;
+      margin-top: -30%;
       border-radius: 10%;
   }
     /* flexwrap in media query */

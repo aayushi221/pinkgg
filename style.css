@@ -606,3 +606,63 @@ form input[type=text], select {
     font-size: larger;
     padding-left: 5%;
   }
+
+  .page2 >span {
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 69px;
+    margin-left: .5em;
+    font-weight: 300;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    max-width: 33.33%;
+    margin-right: 5%;
+  }
+
+  .image-atomichub{
+      max-width: 66.69%;
+      height:50px;
+  }
+    /* flexwrap in media query */
+
+    .image-atomichub >img {
+      max-width:900px;
+      height: auto;
+    }
+    .container .box { 
+      width:540px; 
+      margin:50px; 
+      display:table; 
+  } 
+  .container .box .box-row { 
+      display:table-row; 
+  } 
+  .container .box .box-cell { 
+      display:table-cell; 
+      width:33%; 
+      padding:10px; 
+  } 
+  .container .box .box-cell.box1 { 
+      background:green; 
+      color:white; 
+      text-align:justify; 
+  } 
+  .container .box .box-cell.box2 { 
+      background:lightgreen; 
+      text-align:justify 
+  } 
+  .container .box .box-cell.box3 { 
+      background:lime; 
+      text-align:justify; 
+  }

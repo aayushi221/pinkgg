@@ -607,6 +607,10 @@ form input[type=text], select {
     font-size: larger;
     padding-left: 5%;
   }
+
+  /* 1 CARD AND IMAGE + DECK OF CARDS  */
+
+
  .two {
    margin-top: 20%;
  }
@@ -705,6 +709,8 @@ form input[type=text], select {
     font-weight: bold;
   }
 
+  /* CARDS SECTION */
+
   .three {
     margin-top: -10%;
   }
@@ -738,6 +744,9 @@ form input[type=text], select {
   align-items: flex-end;
 }
 
+
+/* ABOUT PINK SECTION  */
+
 .four {
   background-color: #f8fafd;
 }
@@ -768,3 +777,18 @@ form input[type=text], select {
   text-align: left;
 }
 
+/* TEAM MEMBERS CARD  */
+
+.team-member-card {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 25px;
+  background: #1e1e1e;
+  padding: 65px 35px 60px 110px;
+  width: 90%;
+  height: 100vh;  
+  align-items: center;
+  flex:wrap;
+  margin-top: 5%;
+}

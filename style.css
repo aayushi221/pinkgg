@@ -750,6 +750,7 @@ form input[type=text], select {
 }
 
 .about-pink {
+  display: flex;
   max-width: 30%;
   margin-right: 15%;
   margin-left: 5%;
@@ -764,4 +765,10 @@ form input[type=text], select {
   font-weight: 600;
   line-height: 1.6;
   text-align: left;
+}
+
+.about-pink > img {
+  position: absolute;
+  top:10;
+  left:10;
 }

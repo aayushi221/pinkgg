@@ -774,6 +774,7 @@ form input[type=text], select {
   font-weight: 600;
   line-height: 1.6;
   margin-left: 5%;
+  margin-top: 10%;
   text-align: left;
 }
 
@@ -791,4 +792,8 @@ form input[type=text], select {
   align-items: center;
   flex:wrap;
   margin-top: 5%;
+}
+
+.members {
+  color: #fff;
 }

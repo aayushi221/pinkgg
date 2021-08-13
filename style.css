@@ -788,11 +788,12 @@ form input[type=text], select {
   background: #1e1e1e;
   padding: 65px 35px 60px 110px;
   width: 90%;
-  height: 100vh;  
+  height: auto;  
   align-items: center;
   flex:wrap;
   margin-top: 5%;
 }
+
 
 .members {
   color: #fff;

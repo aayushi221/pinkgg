@@ -749,12 +749,14 @@ form input[type=text], select {
 
 .four {
   background-color: #f8fafd;
+  margin-top: 30%;
 }
 
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
   margin-right: 10%;
 }
 
@@ -797,4 +799,10 @@ form input[type=text], select {
 
 .members {
   color: #fff;
+  margin-top: 5%;
+}
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

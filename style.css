@@ -749,7 +749,7 @@ form input[type=text], select {
 
 .four {
   background-color: #f8fafd;
-  margin-top: 30%;
+  margin-top: 50%;
 }
 
 .about {
@@ -799,8 +799,29 @@ form input[type=text], select {
 
 .members {
   color: #fff;
-  margin-top: 5%;
+  margin: 5% 5%;
 }
+.members >p {
+ text-align: left;
+ margin: 2% 0;
+}
+h1 {
+ text-align: left;
+
+}
+h5 {
+  color: gray;
+  margin-bottom: 5%;
+ text-align: left;
+
+}
+
+.members >p > a:link {
+  color: #eb3878;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .team-members {
   display: flex;
   justify-content: center;

@@ -158,8 +158,6 @@ nav ul li a:hover {
     padding:0;
     overflow:hidden;
     list-style-type:none;
-    /* background:#444; */
-    /* box-shadow:0 0 1px rgba(0,0,0,.3); */
     transition:max-height 0.5s ease-out;
     position:absolute;
     min-width:100%;
@@ -185,6 +183,7 @@ nav ul li a:hover {
     padding: 10px 45px 10px 45px;
     text-decoration: none;
     margin-left:20px ;
+    margin-top: 8px;
   }
   
   .btn:hover {
@@ -199,7 +198,6 @@ nav ul li a:hover {
     background: #353738;
     padding: 3px 10px;
     border-radius: 10px;
-    z-index: 999;
     display: inline;
     font-size: 32px;
     display: none;

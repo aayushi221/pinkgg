@@ -1,1 +1,2 @@
-This is readme of the pink.gg website
+Checkout the clone of pink.gg website here:
+https://aayushi221.github.io/pinkgg/
